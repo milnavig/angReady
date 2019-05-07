@@ -1,0 +1,88 @@
+$menu_font: bold 16px Helvetica, "Times New Roman", monospace;
+
+header#main-header {
+    font: $menu_font;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    
+    background-image: url("C:/Users/alexa/Desktop/Python/VisitingSite/angReady/src/assets/wall.jpg");
+    background-size: cover;
+    background-position-y: -110px;
+    div#header-menu {
+        display: flex;
+        height: 49px;
+        margin-top: 60px;
+        
+        menu#main-menu {
+            list-style-type: none;
+            list-style-position: inside;
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+            position: relative; /* Для выпадающего меню */
+            ul.submenu {
+                display: none;
+                list-style-type: none;
+                width: 170px;
+                padding: 0px;
+                margin: 0px;
+                position: absolute;
+                li a {
+                    display: block;
+                    text-decoration: none;
+                    color: #FFFFFF;
+                    padding: 15px 0 15px 10px;
+                }
+            }
+            ul.submenu > li {
+                @extend %my-color-light;
+                padding: 0px;
+                margin: 0;
+                width: 160px;
+                &:last-child {
+                    padding-bottom: 15px;
+                    border-radius: 0 0 15px 15px;
+                }
+                &:first-child {
+                    padding-top: 15px;
+                }
+            }
+        }
+        menu#main-menu li:hover > ul {
+            display: list-item;
+            top: 50px;
+        }
+        menu#main-menu > li {
+            @extend %my-color-light;
+            flex-direction: row;
+            padding: 15px 0 15px 0;
+            margin: 0px;
+        }
+        menu#main-menu > li > a {
+            text-decoration: none;
+            color: #FFFFFF;
+            padding: 15px 35px 15px 35px;
+        }
+        menu#main-menu li a:hover {
+            @extend %my-color-dark;
+            animation-name: colorchange;
+            animation-duration: 1s;
+        }
+        menu#main-menu > li:last-child {
+            padding-right: 200px;
+        }
+        menu#main-menu > li:first-child {
+            padding-left: 20px;
+        }
+        svg {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+@keyframes colorchange { 
+	0% {background-color: $color_light;}
+	100% {background-color: $color_dark;}
+}

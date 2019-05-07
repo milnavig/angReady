@@ -1,0 +1,58 @@
+$header_col_light: #C8D8F3;
+$header_col_dark: #A9C1EA;
+
+aside#schedule {
+    //background-color: $header_col_light; /* #CFDDF4 - светло синий */
+    font-size: 14px;
+    div#schedule-header {
+        width: 100%;
+        height: 32px;
+        border-bottom: 1px solid white;
+        background-color: $header_col_dark;
+        text-transform: uppercase;
+        span {
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding-left: 10px;
+            line-height: 32px;
+        }
+    }
+}
+
+.news-wrapper {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid white;
+    background-color: $header_col_light;
+    &:hover {
+        background-color: $header_col_dark;
+    }
+}
+
+.news-count {
+    width: 10%;
+    height: 100%;
+    
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    color: white; 
+    align-self: center;
+    text-align: center;
+}
+.news-header {
+    width: 90%;
+    background-color: white;
+    align-self: center;
+    h3 {
+        margin: 5px;    
+    }
+    a {
+        display: block;  
+        padding: 5px;
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+    }
+}

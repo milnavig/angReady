@@ -1,0 +1,32 @@
+$color_light: #1049A9;
+$color_dark: #052C6E;
+$color_orange: #ffa500;
+$font: Arial, "Times New Roman", sans-serif;
+
+%my-color-light {
+  background-color: $color_light;
+}
+
+%my-color-dark {
+  background-color: $color_dark;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+* {
+    font-family: $font;
+    /* font-size: 18px; */
+}
+
+div#about-header {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div#about-wrapper {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

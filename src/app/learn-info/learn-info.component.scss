@@ -1,0 +1,40 @@
+$pale-blue: #1049A9;
+.learn-info-container {
+  display: flex;
+
+  button {
+    border: none;
+    background-color: $pale-blue;
+    padding: 8px 8px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 4px;
+    mark.unicode {
+      font-size: 2.5rem;
+      color: #fff;
+      background-color: transparent;
+    }
+  }
+  button:focus {
+    outline: none;
+  }
+  button:disabled,
+  button[disabled] {
+    background-color: #D5D5D5;
+    color: #fff;
+  }
+  img {
+    margin-top: 10px;
+    height: 350px;
+    width: auto;
+  }
+  .text {
+    h3 {
+      padding: 0px;
+    }
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 16px;
+  }
+}

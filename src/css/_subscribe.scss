@@ -1,0 +1,46 @@
+$orange_light: #ffa500;
+$orange_dark: #ca8300;
+
+div#subscrb-block {
+    margin: 0 100px 0 100px;
+    background-color: $color_light;
+    height: 230px;
+    color: #FFF;
+    
+    h2 {
+        padding-top: 25px;
+        text-align: center;
+    }
+    h3 {
+        margin: auto;
+        text-align: center;
+        width: 250px;
+        margin-top: 30px;
+        padding: 15px 35px 15px 35px;
+        
+        a {
+            background-color: $orange_light;
+            margin: 0;
+            padding: 15px 35px 15px 35px;
+            text-decoration: none;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            &:hover {
+                background-color: $orange_dark;
+                animation-name: colorchange-3;
+                animation-duration: 1s;
+            }
+        }
+    }
+    p {
+        text-align: center;
+        width: 900px;
+        font-size: 18px;
+        margin: auto;
+    }
+}
+
+@keyframes colorchange-3 { 
+	0% {background-color: $orange_light;} /* оранжевый */
+	100% {background-color: $orange_dark;} /* темно оранжевый */
+}

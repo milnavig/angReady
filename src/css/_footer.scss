@@ -1,0 +1,35 @@
+footer#footer-4 {
+    border-top: 6px solid orange;
+}
+div#white_logo {
+    margin: auto;
+    padding: 40px 0 20px 0;
+    width: 110px;
+    height: 110px;
+    img {
+        width: 110px;
+        height: 110px;
+    }
+}
+div#big_socbuttons {
+    margin: auto;
+    width: 270px;
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        li {
+            margin: 10px;
+            padding: 10px;
+            a {
+                width: 100%;
+                height: 100%;
+            }
+            a img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}

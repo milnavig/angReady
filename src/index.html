@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Авиа клуб</title>
+        <link rel="stylesheet" type="text/css" href="css/style.scss">
+    </head>
+    <body>
+        <header id="info-panel">
+            <div id="secondary-menu">
+                <ul id="header-list">
+                    <li class="phone"><img src="/assets/phone.png" title="Telephone"></li>
+                    <li><p>+38 094 84 77</p></li>
+                    <li class="facebook"><a href="#"><img src="/assets/facebook.png" title="Facebook"></a></li>
+                    <li class="telegram"><a href="#"><img src="/assets/telegram.png" title="Telegram"></a></li>
+                    <li class="twitter"><a href="#"><img src="/assets/twitter.png" title="Twitter"></a></li>
+                    <li class="rss"><a href="#"><img src="/assets/rss.png" title="RSS"></a></li>
+                </ul>
+            </div>
+        </header>
+        <header id="main-header">
+            <div id="logo-name">
+                <img src="/assets/logo.png" title="AirClub" id="logo">
+                <div id="site-name"><span id="big-name">AirClub Kyiv</span><br>крупнейший авиаклуб в Киеве</div>
+            </div>
+            <div id="header-menu">
+                <svg  width="100" height="49">
+                    <polygon points="100 0, 80 16, 70 16, 90 0, 60 0, 40 16, 10 20, 10 28, 40 32, 60 49, 90 49, 70 32, 80 32, 100 49" style="stroke:#1049A9; fill:#1049A9;"/>
+                    <path d="M 10 20 Q 2 25 10 28" style="stroke:#1049A9; fill:#1049A9;"/>
+                </svg>
+                <menu id="main-menu">
+                    <li><a href="#">О нас</a></li> <!-- Без закрывающегося тега можно -->
+                    <li><a href="#">Каталог</a>
+                        <ul class="submenu">
+                            <li><a href=#>Обучение</a></li>
+                            <li><a href=#>Полёты</a></li>
+                            <li><a href=#>Аренда</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </menu>
+            </div>
+        </header>
+        <div id="main-info">
+            <div id="slogan">
+                <h2>Air Club</h2>
+                <p>
+                    Вы хотите летать? Вы хотите подарить полет? Это было не просто, но мы нашли для вас отличные идеи подарков!
+                </p>
+            </div>
+            <div id="forma1">
+                <form>
+                    <h3>Задайте нам вопрос</h3>
+                    <input maxlength="25" placeholder="Введите Ваше имя" class="field">
+                    <input maxlength="25" placeholder="Введите Вашу фамилию" class="field">
+                    <input type="email" maxlength="70" name="e-mail" placeholder="Введите Ваш email" class="field">
+                    <textarea placeholder="Напишите нам" class="textarea"></textarea>
+                    <p>Хотите ли Вы получать рассылку:</p>
+                    <div id="buttons1">
+                        <input type="radio" name="selector1" id="every-week" checked><label for="every-week">Да, хочу</label>
+                        <input type="radio" name="selector1" id="every-month"><label for="every-month">Нет, не хочу</label>
+                    </div>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <div id="planes-header" class="section-header">
+            <div class="decoration"><h3>Наши самолеты</h3></div>
+            <svg  width="100" height="40">
+                    <polygon points="0 0, 0 40, 40 0" style="stroke:#1049A9; fill:#1049A9;"/>
+                    <polygon points="10 40, 15 40, 55 0, 50 0" style="stroke:#1049A9; fill:#1049A9;"/>
+            </svg>
+        </div>
+        <div id="wrapper">
+            <div id="plane-1" class="hover">
+                <div class="plane-name">Ан-2</div>
+                <div class="wrapper-2">
+                    <div class="plane-info">
+                        <h4>Ан-2</h4>
+                        <p>Ан-2 — советский лёгкий многоцелевой самолёт. Представляет собой поршневой однодвигательный биплан с расчалочным крылом. Оборудован       двигателем АШ-62ИР конструкции А. Д. Швецова.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="plane-2" class="hover">
+                <div class="plane-name">А-22LS</div>
+                <div class="wrapper-2">
+                    <div class="plane-info">
+                        <h4>Аэропракт А-22LS</h4>
+                        <p>А-22LS — является глубокой модификацией самолета А-22. Геометрия планера A-22LS такая же как и у А-22L. Конструкция переработана для расчетного взлетного веса 600 кг — в сухопутном варианте и 650 кг — в варианте на поплавках, в соответствии с требованиями категории LSA (Light Sport Airplane).
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="plane-3" class="hover">
+                <div class="plane-name">А-36</div>
+                <div class="wrapper-2">
+                    <div class="plane-info">
+                        <h4>Аэропракт А-36</h4>
+                        <p>A-36 — двухмоторный, двухместный самолет, являющийся развитием идеи самолетов А-26. С целью увеличения дальности полета на А-36 установлены два четырехтактных двигателя Rotax-912S. А-36 предназначен для полётов над территориями, где вынужденная посадка по причине отказа двигателя чрезвычайно нежелательна или невозможна (море, горы, лес, пустыня и т.п.).<br><br>
+                        Самолет имеет смешанную конструкцию (цельнометаллические крыло, оперение, хвостовая балка и стеклопластиковые передняя часть фюзеляжа, капоты двигателей, зализы). А-36 оснащен цельноповоротным горизонтальным оперением, электромеханическими триммерами рулей высоты и направления, боковой ручкой управления. На А-36 возможен взлет и продолжение полета на одном из двигателей.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <aside id="schedule">
+                <div id="schedule-header">
+                    <span>Блог</span>
+                </div>
+                <div class="news-wrapper">
+                    <div class="news-count"><span>1</span></div>
+                    <div class="news-header">
+                        <h3><a href="#">Антонов возобновит производство трех самолетов</a></h3>
+                    </div>
+                </div>
+                <div class="news-wrapper">
+                    <div class="news-count"><span>2</span></div>
+                    <div class="news-header">
+                        <h3><a href="#">В Украине планируют возобновить выпуск Ан-124</a></h3>
+                    </div>
+                </div>
+                <div class="news-wrapper">
+                    <div class="news-count"><span>3</span></div>
+                    <div class="news-header">
+                        <h3><a href="#">В Украине нашелся первый заказчик на Ан-158</a></h3>
+                    </div>
+                </div>
+                <div class="news-wrapper">
+                    <div class="news-count"><span>4</span></div>
+                    <div class="news-header">
+                        <h3><a href="#">Посол в США: У Харьковского авиазавода появился американский инвестор</a></h3>
+                    </div>
+                </div>
+                <div class="news-wrapper">
+                    <div class="news-count"><span>5</span></div>
+                    <div class="news-header">
+                        <h3><a href="#">Иностранцы скупают сверхлегкие украинские самолеты</a></h3>
+                    </div>
+                </div>
+                <div class="news-wrapper">
+                    <div class="news-count"><span>6</span></div>
+                    <div class="news-header">
+                        <h3><a href="#">Одесский авиазавод будет выпускать самолеты совместно с Чехией и США</a></h3>
+                    </div>
+                </div>
+                <div class="news-wrapper">
+                    <div class="news-count"><span>7</span></div>
+                    <div class="news-header">
+                        <h3><a href="#">Знаковое событие. Соглашение Антонова с Boeing</a></h3>
+                    </div>
+                </div>
+                <div class="news-wrapper">
+                    <div class="news-count"><span>8</span></div>
+                    <div class="news-header">
+                        <h3><a href="#">Антонов заключил соглашения на авиасалоне Farnborough</a></h3>
+                    </div>
+                </div>
+                <div class="news-wrapper">
+                    <div class="news-count"><span>9</span></div>
+                    <div class="news-header">
+                        <h3><a href="#">Boeing и Airbus заключили в Фарнборо сделки на $43 млрд</a></h3>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div id="gallery-header" class="section-header">
+            <div class="decoration"><h3>Галерея</h3></div>
+            <svg  width="100" height="40">
+                    <polygon points="0 0, 0 40, 40 0" style="stroke:#1049A9; fill:#1049A9;"/>
+                    <polygon points="10 40, 15 40, 55 0, 50 0" style="stroke:#1049A9; fill:#1049A9;"/>
+            </svg>
+        </div>
+        <div id="slider">
+            <div class="my-slider">
+                <input type="radio" name="slider" id="switch-1" checked>
+                <input type="radio" name="slider" id="switch-2">
+                <input type="radio" name="slider" id="switch-3">
+            
+                <div class="container">
+                    <div class="slides">
+                        <img src="/assets/slider_pic/1.jpg" title="">
+                        <img src="/assets/slider_pic/2.jpg" title="">
+                        <img src="/assets/slider_pic/3.jpg" title="">
+                        <img src="/assets/slider_pic/4.jpg" title="">
+                        <img src="/assets/slider_pic/5.jpg" title=""> 
+                    </div>              
+                </div>
+            
+                <div class="my-labels">
+                    <label for="switch-1"></label>
+                    <label for="switch-2"></label>
+                    <label for="switch-3"></label>
+                </div>   
+            </div>
+        </div>
+        <div id="subscribe">
+            <div id="subscrb-block">
+                <h2>Подарочные сертификаты</h2>
+                <p>Вы хотите летать? Вы хотите подарить полет? Это было не просто, но мы нашли для вас отличные идеи подарков! Выбирайте подарочные сертификаты на нашем сайте. Они все разные и все интересные. </p>
+                <h3><a href="#" title="Подписаться">Подписаться</a></h3>
+            </div>
+        </div>
+        <div id="about-header" class="section-header">
+            <div class="decoration"><h3>Наши услуги</h3></div>
+            <svg  width="100" height="40">
+                <polygon points="0 0, 0 40, 40 0" style="stroke:#1049A9; fill:#1049A9;"/>
+                <polygon points="10 40, 15 40, 55 0, 50 0" style="stroke:#1049A9; fill:#1049A9;"/>
+            </svg>
+        </div>
+        <div id="about-wrapper">
+            <app-root></app-root>
+        </div>
+        <div id="feedback-header" class="section-header">
+            <div class="decoration"><h3>Отзывы клиентов</h3></div>
+            <svg  width="100" height="40">
+                    <polygon points="0 0, 0 40, 40 0" style="stroke:#1049A9; fill:#1049A9;"/>
+                    <polygon points="10 40, 15 40, 55 0, 50 0" style="stroke:#1049A9; fill:#1049A9;"/>
+            </svg>
+        </div>
+        <div id="feedback-wrapper">
+            <div class="wrapper-3">
+                <div class="usr-feedback">
+                    <div class="massage">
+                        <p><i>Очень хорошая компания. Это была моя первая работа и я очень рада, что удалось попасть именно в эту компанию, так как я пришла практически с нулевыми знаниями и без опыта в ИТ, но благодаря тому, что ребята в меня поверили и дали шанс, удалось получить работу. Перешла в другую компанию по причине того, ...</i></p>
+                    </div>
+                    <svg  width="30" height="30">
+                        <polygon points="0 0, 30 0, 30 30" style="stroke:#F0F0F0; fill:#F0F0F0;"/>        
+                    </svg>
+                    <div class="feedback-author">
+                        <b><i>Александр Терещенко, студент</i></b>
+                        <img src="/assets/userpic_3.png" title="">
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-3">
+                <div class="usr-feedback">
+                    <div class="massage">
+                        <p><i>Очень хорошая компания. Это была моя первая работа и я очень рада, что удалось попасть именно в эту компанию, так как я пришла практически с нулевыми знаниями и без опыта в ИТ, но благодаря тому, что ребята в меня поверили и дали шанс, удалось получить работу. Перешла в другую компанию по причине того, ...</i></p>
+                    </div>
+                    <svg  width="30" height="30">
+                        <polygon points="0 0, 30 0, 30 30" style="stroke:#F0F0F0; fill:#F0F0F0;"/>        
+                    </svg>
+                    <div class="feedback-author">
+                        <b><i>Александр Терещенко, студент</i></b>
+                        <img src="/assets/userpic_3.png" title="">
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-3">
+                <div class="usr-feedback">
+                    <div class="massage">
+                        <p><i>Очень хорошая компания. Это была моя первая работа и я очень рада, что удалось попасть именно в эту компанию, так как я пришла практически с нулевыми знаниями и без опыта в ИТ, но благодаря тому, что ребята в меня поверили и дали шанс, удалось получить работу. Перешла в другую компанию по причине того, ...</i></p>
+                    </div>
+                    <svg  width="30" height="30">
+                        <polygon points="0 0, 30 0, 30 30" style="stroke:#F0F0F0; fill:#F0F0F0;"/>        
+                    </svg>
+                    <div class="feedback-author">
+                        <b><i>Александр Терещенко, студент</i></b>
+                        <img src="/assets/userpic_3.png" title="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contacts-header" class="section-header">
+            <div class="decoration"><h3>Контакты</h3></div>
+            <svg  width="100" height="40">
+                    <polygon points="0 0, 0 40, 40 0" style="stroke:#1049A9; fill:#1049A9;"/>
+                    <polygon points="10 40, 15 40, 55 0, 50 0" style="stroke:#1049A9; fill:#1049A9;"/>
+            </svg>
+        </div>
+        <footer id="footer-1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.568842746889!2d30.4432964189029!3d50.41187241083988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9478d439dcb%3A0x27666bcb99529f88!2z0JzRltC20L3QsNGA0L7QtNC90LjQuSDQsNC10YDQvtC_0L7RgNGCICLQmtC40ZfQsiIg0ZbQvC4g0KHRltC60L7RgNGB0YzQutC-0LPQviAo0JbRg9C70Y_QvdC4KQ!5e0!3m2!1suk!2sua!4v1552158630720" width="700px" height="400px" frameborder="0" style="border: 1px solid #1049A9;" allowfullscreen></iframe>
+        </footer>
+        <footer id="footer-2">
+            <div id="location">
+                <img src="/assets/icons/icons-location.png" title="Location">
+                <span>Международный аэропорт Киев Жуляны, вулиця Медова, Київ</span>
+            </div>
+            <div id="calendar">
+                <img src="/assets/icons/icons-calendar.png" title="Calendar">
+                <span>Понедельник, Вторник, Среда</span>
+            </div>
+            <div id="watches">
+                <img src="/assets/icons/icons-watch.png" title="Calendar">
+                <span>Понедельник: 11.00 - 18.00, Вторник, Среда: 12.00 - 19.30</span>
+            </div>
+            <div id="telephone">
+                <img src="/assets/icons/icons-phone.png" title="Phone">
+                <span>+38 094 84 77</span>
+            </div>
+            <div id="email">
+                <img src="/assets/icons/icons-email.png" title="Email">
+                <span>airclub@gmail.com</span>
+            </div>
+        </footer>
+        <footer id="footer-3">
+        </footer>
+        <footer id="footer-4">
+            <div id="white_logo">
+                <img src="/assets/logo_white.png" title="AirClub">
+            </div>
+            <div id="big_socbuttons">
+                <ul>
+                    <li class="facebook"><a href="#"><img src="/assets/facebook.png" title="Facebook"></a></li>
+                    <li class="telegram"><a href="#"><img src="/assets/telegram.png" title="Telegram"></a></li>
+                    <li class="twitter"><a href="#"><img src="/assets/twitter.png" title="Twitter"></a></li>
+                    <li class="rss"><a href="#"><img src="/assets/rss.png" title="RSS"></a></li>
+                </ul>
+            </div>
+        </footer>
+        <footer id="footer-5">
+            <span>AirClub © 2019</span>
+        </footer>
+    </body>
+</html>

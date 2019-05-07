@@ -1,0 +1,58 @@
+div#secondary-menu {
+    width: 100%;
+    height: 34px;
+    background-color: $color_light;
+    color: white;
+    
+    ul#header-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    
+        display: flex;
+        /* установи height и width для div'a (secondary-menu). Когда ты флоатишь, у тебя схлопывается все до нуля, поэтому фон исчезает. */
+        float: right;
+        li {
+            &:last-child {
+                margin-right: 150px;
+            }
+            p {
+                margin: 0;
+                font-size: 19px;
+                padding: 0 30px 0 10px;
+                margin-top: 5px;
+            }
+            a {
+                margin: 0;
+                padding: 15px 50px 0 50px;
+            }
+            img {
+                margin: 0px;
+                padding: 0px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+$facebook_color: #3c5b9b;
+$twitter_color: #359bed;
+$telegram_color: #3ab6e5;
+$rss_color: #f08421;
+
+.facebook:hover {
+    background-color: $facebook_color;
+}
+
+.twitter:hover {
+    background-color: $twitter_color;
+}
+
+.telegram:hover {
+    background-color: $telegram_color;
+}
+
+.rss:hover {
+    background-color: $rss_color;
+}

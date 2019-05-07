@@ -1,0 +1,140 @@
+$columns: 800px 1fr 5%;
+$rows: 34px 170px 500px 40px 620px 40px 280px 300px 40px 550px 40px 500px 40px 420px 270px 35px;
+$areas: "info-panel info-panel info-panel"
+        "main-header main-header main-header"
+        "main-info main-info main-info"
+        "planes-header planes-header planes-header"
+        "wrapper wrapper wrapper"
+        "gallery-header gallery-header gallery-header"
+        "slider slider slider"
+        "subscribe subscribe subscribe"
+        "about-header about-header about-header"
+        "about about about"
+        "feedback-header feedback-header feedback-header"
+        "feedback feedback feedback"
+        "contacts contacts contacts"
+        "footer-1 footer-2 footer-3"
+        "footer-4 footer-4 footer-4"
+        "footer-5 footer-5 footer-5";
+
+$rows_2: 34px 170px 500px 40px 620px 300px 40px 280px 40px 500px 40px 420px 270px 35px;
+$areas_2: "info-panel info-panel info-panel"
+        "main-header main-header main-header"
+        "main-info main-info main-info"
+        "planes-header planes-header planes-header"
+        "wrapper wrapper wrapper"
+        "subscribe subscribe subscribe"
+        "gallery-header gallery-header gallery-header"
+        "slider slider slider"
+        "feedback-header feedback-header feedback-header"
+        "feedback feedback feedback"
+        "contacts contacts contacts"
+        "footer-1 footer-2 footer-3"
+        "footer-4 footer-4 footer-4"
+        "footer-5 footer-5 footer-5";
+
+$color_of_news: #CFDDF4;
+    
+body {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    grid-template-areas: $areas;
+}
+
+header#info-panel {
+    grid-area: info-panel;
+}
+header#main-header {
+    grid-area: main-header;
+}
+div#main-info {
+    grid-area: main-info;
+}
+div#planes-header {
+    grid-area: planes-header;
+    background-color: orange;
+}
+div#plane-1 {
+    grid-area: plane-1;
+}
+div#plane-2 {
+    grid-area: plane-2;
+}
+div#plane-3 {
+    grid-area: plane-3;
+}
+aside#schedule {
+    grid-area: schedule;
+    //background-color: $color_of_news;
+}
+div#gallery-header {
+    grid-area: gallery-header;
+    background-color: orange;
+}
+div#slider {
+    grid-area: slider;
+}
+div#subscribe {
+    grid-area: subscribe;
+}
+div#feedback-header {
+    grid-area: feedback-header;
+    background-color: orange;
+}
+div#feedback-wrapper {
+    grid-area: feedback;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+div#contacts-header {
+    grid-area: contacts;
+    background-color: orange;
+}
+footer#footer-1 {
+    grid-area: footer-1;
+}
+footer#footer-2 {
+    grid-area: footer-2;
+}
+footer#footer-3 {
+    grid-area: footer-3;
+}
+footer#footer-4 {
+    grid-area: footer-4;
+    background-color: $color_light;
+}
+footer#footer-5 {
+    grid-area: footer-5;
+    background-color: $color_dark;
+}
+$small-columns: 35% 40% 25%;
+$small-areas: "plane-1 plane-2 schedule"
+            "plane-3 plane-3 schedule";
+
+$small-columns_1: 25% 35% 40%;
+$small-areas_1: "schedule plane-1 plane-2"
+            "schedule plane-3 plane-3";
+
+div#wrapper {
+    grid-area: wrapper;
+    padding: 0;
+    margin: 10px 100px 10px 100px;
+    display: grid;
+    grid-template-columns: $small-columns_1;
+    grid-template-rows: 250px 350px;
+    grid-template-areas: $small-areas_1;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+div#about-header {
+    grid-area: about-header;
+    background-color: orange;
+}
+
+div#about-wrapper {
+    grid-area: about;
+}

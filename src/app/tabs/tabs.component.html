@@ -1,0 +1,32 @@
+<div class="tab-panel">
+    <aside class="left-button" [ngClass]="direction === 1 ? 'aside' : 'aside-v2'">
+        <button (click)="previous()" [disabled]="leftBtnInActive" [hidden]="_closable">
+            <mark class="unicode" title="Previous">«</mark>
+        </button>
+    </aside>
+    <div [ngClass]="direction === 1 ? 'tab-frame' : 'tab-frame-v2'">
+        <ul>
+            <li *ngFor="let tab of tabs; index as i" (click)="selectTab(tab)" [ngClass]="tab.selected && !_closable ? 'selected-tab' : ''">
+                <span class="dot">{{i + 1}}</span> {{ tab.tabTitle }}
+            </li>
+            <label class="label">
+                <div class="toggle">
+                    <input class="toggle-state" type="checkbox" name="check" value="check" (click)="changeDirection()" />
+                    <div class="toggle-inner">
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="active-bg"></div>
+                </div>
+            </label>
+        </ul>
+
+        <div class="tab-content" [ngClass]="_closable ? 'hide-tab' : ''">
+            <ng-content></ng-content>
+        </div>
+    </div>
+    <aside class="right-button" [ngClass]="direction === 1 ? 'aside' : 'aside-v2'">
+        <button (click)="next()" [disabled]="rightBtnInActive" [hidden]="_closable">
+            <mark class="unicode" title="Next">»</mark>
+        </button>
+    </aside>
+</div>

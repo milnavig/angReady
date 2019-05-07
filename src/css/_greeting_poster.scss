@@ -1,0 +1,119 @@
+$greeting_background: rgba(190, 191, 195, .6);
+
+div#main-info {
+    width: 100%;
+    background-image: url("C:/Users/alexa/Desktop/Python/VisitingSite/angReady/src/assets/wall.jpg");
+    background-size: cover;
+    background-position-y: -280px; /* Задаёт положение фонового изображения внутри элемента по вертикали. */
+    display: flex;
+    justify-content: space-between;
+    div#slogan {
+        width: 400px;
+        margin: 50px 0 0 100px;
+        color: white;
+        font-size: 22px;
+        h2 {
+            font-size: 32px;
+        }
+    }
+    #forma1 {
+        height: 400px;
+        width: 400px;
+        background-color: darkgray;
+        @include border-radius(15px);
+        background: $greeting_background;
+    
+        /* Выравниваем в форму в нашем div */
+        float: right;
+        margin: 40px 200px 0 0;
+        h3 {
+            margin: 0px;
+            padding-top: 10px;
+            text-align: center;
+        }
+        .field {
+            width: 360px;
+            height: 30px;
+            margin: 10px 10px 10px 10px;
+            @include border-radius(10px);
+            border-style: none;
+            
+            padding: 0 10px 0 10px;
+    
+            font-size: 14px;
+        }
+        .textarea {
+            width: 360px;
+            height: 50px;
+            margin: 10px;
+            @include border-radius(10px);
+            border-style: none;
+            
+            padding: 10px;
+            resize: none; /* Запрещаем изменять размер */
+    
+            font-size: 14px;
+        }
+        form p, div#buttons1 {
+            margin-left: 10px;
+        }
+        label {
+            margin-right: 10px;
+        }
+        button[type="submit"] {
+            width: 100px;
+            height: 30px;
+            @include border-radius(10px);
+            border-style: none;
+            background-color: $color_light;
+            font-size: 14px;
+            color: white;
+            float: right;
+            margin: 10px 10px 0 0;
+        }
+    }
+}
+
+/* Стилизую радиокнопки */
+
+input[type="radio"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0; /* Определяет уровень прозрачности элемента веб-страницы. Значение 0 соответствует полной прозрачности элемента, 1, наоборот — его непрозрачности. */
+    margin: 10px 0 0 7px;
+}
+input[type="radio"] + label {
+    position: relative;
+    padding: 0 0 0 35px;
+    cursor: pointer;
+}
+input[type="radio"] + label:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #052C6E;
+    border-radius: 50%;
+    background: #FFF;
+}
+input[type="radio"] + label:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #1049A9;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+    opacity: 0;
+    transition: .2s;
+}
+input[type="radio"]:checked + label:after {
+    opacity: 1;
+}
+input[type="radio"]:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0,82,198,.7);
+}

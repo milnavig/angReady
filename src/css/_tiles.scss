@@ -1,0 +1,65 @@
+.hover {
+    position: relative;
+}
+div#plane-1 {
+    background-image: url("C:/Users/alexa/Desktop/Python/VisitingSite/angReady/src/assets/plane3.png");
+    background-size: cover;
+    background-position-y: -30px;
+    background-position-x: 0px;
+}
+div#plane-2 {
+    background-image: url("C:/Users/alexa/Desktop/Python/VisitingSite/angReady/src/assets/plane2.png");
+    background-size: cover;
+    background-position-y: 310px;
+}
+div#plane-3 {
+    background-image: url("C:/Users/alexa/Desktop/Python/VisitingSite/angReady/src/assets/plane1.png");
+    background-size: cover;
+    background-position-y: -60px;
+}
+div.wrapper-2 {
+    display: none;
+    background: rgba(16, 73, 169, .7);
+    animation-name: colorchange-2;
+	animation-duration: 1s;
+    h4 {
+        margin: 0;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    p {
+        color: white;
+    }
+}
+
+@keyframes colorchange-2 { 
+	0% {background: rgba(16, 73, 169, 0);}
+	100% {background: rgba(16, 73, 169, .7);}
+}
+
+.hover:hover .wrapper-2 {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+div.plane-info {
+    padding: 30px;
+}
+
+div.plane-name {
+    padding: 10px 0 10px 0;
+    
+    width: 100px;
+    text-align: center;
+    background-color: $color_light;
+    color: white;
+    font-size: 18px;
+    
+    position: absolute;
+    bottom: 0px;
+    right: 0px; /* теперь по правой стороне блока. Вместо float:right; */
+}
+.hover:hover .plane-name {
+    display: none;
+}

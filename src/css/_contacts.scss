@@ -1,0 +1,26 @@
+footer#footer-1 {
+    iframe {
+        margin: 10px 0 10px 100px;
+        frameborder: 0;
+    }
+}
+footer#footer-2 {
+    padding: 40px 0 0 20px;
+    div {
+        display: flex;
+        margin: 10px;
+    }
+    img {
+        width: 30px;
+        height: 30px;
+    }
+    span {
+        margin-left: 10px;
+        display: block;
+        line-height: 30px;
+    }
+}
+footer#footer-3 {
+    padding: 20px 20px 20px 5px;
+    line-height: 25px;
+}
